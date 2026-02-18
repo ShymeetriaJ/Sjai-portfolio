@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dark background circle -->
+  <rect width="64" height="64" rx="14" fill="#0a0a0f"/>
+  <rect width="64" height="64" rx="14" fill="none" stroke="#fbb92d" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Letter J -->
+  <text x="18" y="46" font-family="Arial, sans-serif" font-weight="800" font-size="40" fill="#f0f0f0">J</text>
+  
+  <!-- Gold dot (matching the Jai. brand) -->
+  <circle cx="48" cy="44" r="5" fill="#fbb92d"/>
+</svg>
