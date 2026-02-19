@@ -1,11 +1,6 @@
-/* ============================================
-   WAIT FOR THE PAGE TO FULLY LOAD
-============================================ */
 document.addEventListener('DOMContentLoaded', function() {
 
-    /* ============================================
-       1. CLOSE MOBILE MENU WHEN A LINK IS CLICKED
-    ============================================ */
+    // mobile collapse
     const navLinks = document.querySelectorAll('.nav-link');
     const navMenu = document.getElementById('navMenu');
 
@@ -18,9 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    /* ============================================
-       2. NAVBAR BACKGROUND CHANGE ON SCROLL
-    ============================================ */
+//    navbar background scroll
     const navbar = document.querySelector('.navbar');
 
     window.addEventListener('scroll', function() {
@@ -31,9 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    /* ============================================
-       3. SMOOTH SCROLL FOR ANCHOR LINKS
-    ============================================ */
+    // anchor link scroll
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(function(link) {
@@ -57,10 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    /* ============================================
-       4. SCROLL ANIMATIONS (Fade in on scroll)
-    ============================================ */
+        // scroll animations
     const observerOptions = {
         threshold: 0.15,
         rootMargin: '0px'
@@ -84,16 +72,13 @@ document.addEventListener('DOMContentLoaded', function() {
         element.classList.add('fade-up');
         observer.observe(element);
     });
-
-    /* ============================================
-       5. LIGHTBOX (Gallery Image Popup)
-    ============================================ */
+    // gallery pop up
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxClose = document.getElementById('lightbox-close');
     const galleryItems = document.querySelectorAll('.gallery-item');
 
-    // Open lightbox when a gallery item is clicked
+    // open lightbox when a gallery item is clicked
     galleryItems.forEach(function(item) {
         item.addEventListener('click', function() {
             const img = item.querySelector('img');
@@ -105,23 +90,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close lightbox - click X button
+    // close lightbox 
     lightboxClose.addEventListener('click', function(e) {
         e.stopPropagation();
         lightbox.classList.remove('active');
     });
 
-    // Close lightbox - click dark background
+    // close lightbox  dark background
     lightbox.addEventListener('click', function() {
         lightbox.classList.remove('active');
     });
 
-    // Prevent clicking the image from closing
+    // stop clicking the image from closing
     lightboxImg.addEventListener('click', function(e) {
         e.stopPropagation();
     });
 
-    // Close lightbox - press Escape key
+    // close lightbox by pressing escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             lightbox.classList.remove('active');

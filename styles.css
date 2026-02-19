@@ -1,6 +1,4 @@
-/* ============================================
-   CUSTOM VARIABLES (Our Color Theme)
-============================================ */
+/* CUSTOM VARIABLES */
 :root {
     --bg-dark: #0a0a0f;
     --bg-card: #12121a;
@@ -12,17 +10,13 @@
     --border: rgba(255, 255, 255, 0.06);
 }
 
-/* ============================================
-   NAVBAR STYLES
-============================================ */
+/* NAVBAR STYLES */
 .navbar {
     background-color: var(--bg-dark);
     border-bottom: 1px solid var(--border);
     padding: 16px 0;
 }
-/* ============================================
-   CUSTOM BUTTON STYLES
-============================================ */
+/* CUSTOM BUTTON STYLES */
 .btn-accent {
     background-color: var(--accent);
     color: var(--bg-dark);
@@ -38,9 +32,7 @@
     transform: translateY(-2px);
     color: var(--bg-dark);
 }
-/* ============================================
-   NAVBAR BRAND (Logo)
-============================================ */
+/* NAVBAR */
 .navbar-brand {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -53,9 +45,7 @@
     color: var(--accent);
 }
 
-/* ============================================
-   NAV LINKS
-============================================ */
+/* NAV LINKS */
 .navbar-nav .nav-link {
     color: var(--text-secondary) !important;
     font-size: 14px;
@@ -69,9 +59,7 @@
 .navbar-nav .nav-link:hover {
     color: var(--accent) !important;
 }
-/* ============================================
-   GLOBAL STYLES
-============================================ */
+/* GLOBAL STYLES */
 body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
@@ -79,9 +67,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ============================================
-   SECTION 1: HERO
-============================================ */
+/* SECTION 1: HERO */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -128,7 +114,7 @@ body {
     gap: 16px;
 }
 
-/* Outline button (ghost button) */
+/* Outline button */
 .btn-outline {
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--text-primary);
@@ -143,9 +129,7 @@ body {
     border-color: var(--accent);
     color: var(--accent);
 }
-/* ============================================
-   HERO PHOTO FRAME
-============================================ */
+/* HERO PHOTO FRAME */
 .photo-frame {
     width: 350px;
     height: 420px;
@@ -174,9 +158,7 @@ body {
     border-radius: 20px;
 }
 
-/* ============================================
-   FLOATING SHAPES (Around Photo)
-============================================ */
+/* FLOATING SHAPES (Around Photo) */
 .shape {
     position: absolute;
     border: 2px solid rgba(251, 185, 45, 0.25);
@@ -220,9 +202,7 @@ body {
         transform: translateY(-20px);
     }
 }
-/* ============================================
-   SECTION 2: ABOUT
-============================================ */
+/* SECTION 2: ABOUT */
 .about {
     padding: 120px 0;
     border-top: 1px solid var(--border);
@@ -252,9 +232,7 @@ body {
     margin-bottom: 32px;
 }
 
-/* ============================================
-   STATS ROW
-============================================ */
+/* STATS ROW */
 .about-stats {
     display: flex;
     gap: 40px;
@@ -279,9 +257,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* ============================================
-   TECH STACK PILLS
-============================================ */
+/* TECH STACK PILLS */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -306,9 +282,7 @@ body {
     color: var(--accent);
     box-shadow: 0 0 15px rgba(251, 185, 45, 0.1);
 }
-/* ============================================
-   SECTION 3: PROJECTS
-============================================ */
+/* SECTION 3: PROJECTS */
 .projects {
     padding: 120px 0;
     border-top: 1px solid var(--border);
@@ -318,9 +292,7 @@ body {
     margin-bottom: 0;
 }
 
-/* ============================================
-   PROJECT CARDS
-============================================ */
+/* PROJECT CARDS */
 .project-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -336,9 +308,7 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* ============================================
-   PROJECT IMAGE
-============================================ */
+/* PROJECT IMAGE */
 .project-image {
     height: 220px;
     background: linear-gradient(135deg, var(--bg-card), #1e1e30);
@@ -366,9 +336,7 @@ body {
     max-height: 400px;
 }
 
-/* ============================================
-   PROJECT INFO
-============================================ */
+/* PROJECT INFO */
 .project-info {
     padding: 28px;
 }
@@ -423,17 +391,13 @@ body {
 .project-links a:hover {
     opacity: 0.7;
 }
-/* ============================================
-   SECTION 4: DESIGN GALLERY
-============================================ */
+/* SECTION 4: DESIGN GALLERY */
 .gallery {
     padding: 120px 0;
     border-top: 1px solid var(--border);
 }
 
-/* ============================================
-   CSS GRID LAYOUT
-============================================ */
+/* CSS GRID LAYOUT */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -446,9 +410,7 @@ body {
     grid-row: span 2;
 }
 
-/* ============================================
-   GALLERY ITEMS
-============================================ */
+/* GALLERY ITEMS */
 .gallery-item {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -475,9 +437,7 @@ body {
     transform: scale(1.08);
 }
 
-/* ============================================
-   GALLERY HOVER OVERLAY
-============================================ */
+/* GALLERY HOVER OVERLAY */
 .gallery-item::after {
     content: 'View Design →';
     position: absolute;
@@ -501,9 +461,7 @@ body {
 .gallery-item:hover::after {
     opacity: 1;
 }
-/* ============================================
-   SECTION 5: CONTACT
-============================================ */
+/* SECTION 5: CONTACT */
 .contact {
     padding: 120px 0;
     border-top: 1px solid var(--border);
@@ -534,9 +492,7 @@ body {
     margin-bottom: 60px;
 }
 
-/* ============================================
-   SOCIAL LINKS
-============================================ */
+/* SOCIAL LINKS */
 .social-links {
     display: flex;
     justify-content: center;
@@ -565,9 +521,7 @@ body {
     box-shadow: 0 8px 20px rgba(251, 185, 45, 0.15);
 }
 
-/* ============================================
-   FOOTER
-============================================ */
+/* FOOTER */
 .footer {
     padding: 40px 0;
     border-top: 1px solid var(--border);
@@ -582,9 +536,7 @@ body {
 .footer-accent {
     color: var(--accent);
 }
-/* ============================================
-   BACKGROUND PARTICLES (Floating Dots)
-============================================ */
+/* BACKGROUND PARTICLES (Floating Dots) */
 .particles {
     position: fixed;
     top: 0;
@@ -623,16 +575,12 @@ body {
         transform: scale(1.8);
     }
 }
-/* ============================================
-   MAKE SURE CONTENT IS ABOVE PARTICLES
-============================================ */
+/* PARTICLES */
 section, nav, footer {
     position: relative;
     z-index: 1;
 }
-/* ============================================
-   NAVBAR SCROLL EFFECT
-============================================ */
+/* NAVBAR SCROLL EFFECT */
 .navbar-scrolled {
     background-color: rgba(10, 10, 15, 0.95) !important;
     backdrop-filter: blur(20px);
@@ -641,9 +589,7 @@ section, nav, footer {
     padding-bottom: 8px !important;
 }
 
-/* ============================================
-   SCROLL ANIMATIONS
-============================================ */
+/* SCROLL ANIMATIONS */
 .fade-up {
     opacity: 0;
     transform: translateY(30px);
@@ -655,9 +601,7 @@ section, nav, footer {
     transform: translateY(0);
 }
 
-/* ============================================
-   LIGHTBOX (Fullscreen Image Popup)
-============================================ */
+/* LIGHTBOX (Fullscreen Image Popup) */
 .lightbox {
     position: fixed;
     top: 0;
@@ -711,16 +655,7 @@ section, nav, footer {
     color: var(--accent);
 }
 
-/* ============================================
-   RESPONSIVE STYLES
-   ============================================
-   Media queries let us change CSS based on
-   screen width. We go from largest to smallest.
-============================================ */
-
-/* ============================================
-   TABLETS (992px and below)
-============================================ */
+/* TABLETS (992px and below) */
 @media (max-width: 991.98px) {
 
     /* Hero Section */
@@ -751,7 +686,7 @@ section, nav, footer {
         font-size: 40px;
     }
 
-    /* Gallery: 2 columns instead of 3 */
+    /* Gallery: 2 columns */
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -767,9 +702,7 @@ section, nav, footer {
     }
 }
 
-/* ============================================
-   MOBILE (768px and below)
-============================================ */
+/* MOBILE (768px and below) */
 @media (max-width: 767.98px) {
 
     /* Hero Section */
@@ -888,9 +821,7 @@ section, nav, footer {
     }
 }
 
-/* ============================================
-   SMALL MOBILE (480px and below)
-============================================ */
+/* SMALL MOBILE (480px and below) */
 @media (max-width: 480px) {
 
     .hero-name {
