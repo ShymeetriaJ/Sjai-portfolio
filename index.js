@@ -112,5 +112,38 @@ document.addEventListener('DOMContentLoaded', function() {
             lightbox.classList.remove('active');
         }
     });
+    // Email template carousel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
 
+    let currentSlide = 0;
+
+    function goToSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+
+        currentSlide = index;
+
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', function() {
+        goToSlide(currentSlide - 1);
+    });
+
+    nextBtn.addEventListener('click', function() {
+        goToSlide(currentSlide + 1);
+    });
+
+    dots.forEach(function(dot, index) {
+        dot.addEventListener('click', function() {
+            goToSlide(index);
+        });
+    });
 });
