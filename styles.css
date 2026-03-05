@@ -430,11 +430,11 @@ body {
 
 .gallery-item:hover {
     border-color: rgba(251, 185, 45, 0.3);
-    transform: scale(1.02);
+
 }
 
 .gallery-item:hover img {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 /* GALLERY HOVER OVERLAY */
@@ -445,8 +445,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(251, 185, 45, 0.1);
-    backdrop-filter: blur(4px);
+    background: rgba(251, 185, 45, 0.15);
+    /* backdrop-filter: blur(4px); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -873,11 +873,10 @@ section, nav, footer {
 
 .design-item:hover {
     border-color: rgba(251, 185, 45, 0.3);
-    transform: scale(1.02);
 }
 
 .design-item:hover img {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .design-item::after {
@@ -887,8 +886,8 @@ section, nav, footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(251, 185, 45, 0.1);
-    backdrop-filter: blur(4px);
+    background: rgba(251, 185, 45, 0.15);
+    /* backdrop-filter: blur(4px); */
     display: flex;
     align-items: center;
     justify-content: center;
