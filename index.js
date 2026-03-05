@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slides[currentSlide].classList.add('active');
         dots[currentSlide].classList.add('active');
     }
-
+    if (prevBtn && nextBtn && slides.length > 0) {
     prevBtn.addEventListener('click', function() {
         goToSlide(currentSlide - 1);
     });
@@ -146,4 +146,5 @@ document.addEventListener('DOMContentLoaded', function() {
             goToSlide(index);
         });
     });
+}
 });
