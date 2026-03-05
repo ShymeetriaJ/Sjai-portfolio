@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         // scroll animations
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver(function(entries) {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const animatedElements = document.querySelectorAll(
         '.section-number, .section-title, .about-description, ' +
-        '.about-stats, .tech-stack, .project-card, .gallery-item, ' +
+        '.about-stats, .tech-stack, .project-card, ' +
         '.contact-title, .contact-subtitle, .contact-buttons, .social-links'
     );
 
